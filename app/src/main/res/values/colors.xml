@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#0284c7</color>
+    <color name="primary_dark">#0369a1</color>
+    <color name="accent">#38bdf8</color>
+    <color name="background_dark">#0f172a</color>
+    <color name="surface_dark">#1e293b</color>
+    <color name="text_white">#f8fafc</color>
+    <color name="text_gray">#94a3b8</color>
+    <color name="trigger_point_color">#f59e0b</color>
+    <color name="target_point_color">#ef4444</color>
+    <color name="line_color">#38bdf8</color>
+    <color name="success">#10b981</color>
+</resources>

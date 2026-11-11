@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/floating_icon"
+            android:contentDescription="Turbo Icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/text_white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100% Offline • No Root • Accessibility Powered"
+                android:textColor="@color/accent"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Card: Permissions -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/macro_editor_bg"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_permissions"
+            android:textColor="@color/text_white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/desc_permissions"
+            android:textColor="@color/text_gray"
+            android:textSize="13sp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnOverlayPermission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/macro_editor_button_bg"
+            android:text="@string/btn_overlay_perm"
+            android:textColor="@color/text_white"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnAccessibilityPermission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/macro_editor_button_bg"
+            android:text="@string/btn_accessibility_perm"
+            android:textColor="@color/text_white" />
+    </LinearLayout>
+
+    <!-- Card: Mode & Speed Configuration -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/macro_editor_bg"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="โหมดการทำงานของปุ่ม (Click Mode)"
+            android:textColor="@color/text_white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgClickMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/rbSingleTap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Single Tap (แตะ 1 ครั้งตามจังหวะนิ้ว)"
+                android:textColor="@color/text_white"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/rbCrazyTap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crazy Tap / Rapid Fire (กดค้างแล้วคลิกรัวๆ)"
+                android:textColor="@color/text_white" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvIntervalLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ความถี่การคลิกรัว: 80 ms"
+            android:textColor="@color/accent"
+            android:textSize="13sp"
+            android:layout_marginTop="8dp" />
+
+        <SeekBar
+            android:id="@+id/sbInterval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:min="30"
+            android:max="300"
+            android:progress="80"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <!-- Action Buttons -->
+    <Button
+        android:id="@+id/btnToggleService"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/macro_editor_button_bg"
+        android:text="@string/btn_start_overlay"
+        android:textColor="@color/text_white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/status_need_perm"
+        android:textAlignment="center"
+        android:textColor="@color/text_gray"
+        android:textSize="13sp"
+        android:layout_marginTop="12dp" />
+
+</LinearLayout>

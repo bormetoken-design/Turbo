@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Turbo Trigger</string>
+    <string name="accessibility_service_desc">บริการจำลองการแตะหน้าจอแบบไม่ใช้ Root สำหรับฟังก์ชันทริกเกอร์ 2 จุด (ปลอดภัยและออฟไลน์ 100%)</string>
+    <string name="title_permissions">การตั้งค่าสิทธิ์ที่จำเป็น</string>
+    <string name="desc_permissions">เปิดสิทธิ์ด้านล่างเพื่อเริ่มใช้งานปุ่มทริกเกอร์ลอยบนหน้าจอ</string>
+    <string name="btn_overlay_perm">1. เปิดสิทธิ์แสดงทับหน้าจอ (Overlay)</string>
+    <string name="btn_accessibility_perm">2. เปิดสิทธิ์แตะหน้าจอ (Accessibility)</string>
+    <string name="btn_start_overlay">🚀 เริ่มเปิดใช้งานปุ่ม 2 จุด</string>
+    <string name="btn_stop_overlay">⏹️ หยุดการทำงาน</string>
+    <string name="status_ready">พร้อมใช้งาน (กดปุ่มเริ่มทำงานเพื่อแสดงปุ่มลอย)</string>
+    <string name="status_need_perm">กรุณาเปิดสิทธิ์ทั้ง 2 ข้อด้านบนก่อนเริ่มใช้งาน</string>
+</resources>
